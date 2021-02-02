@@ -7,11 +7,11 @@ This plugin is functionally equivalent to [rehype-katex][rehype-katex] but is
 specifically intended to be used with [mdsvex][mdsvex] (markdown format for
 [Svelte][svelte]).
 
-The key issue it addresses is that curly braces in LaTeX, e.g. `{x}`, conflict
+The key issue it addresses is that LaTeX curly braces (e.g. `{x}`) conflict
 with Svelte's template syntax; as such, using rehype-katex to serialize a LaTeX
 expression such as `\frac{x}{y}` would result in "`x` is not defined" and "`y`
 is not defined" errors. This plugin fixes those errors by rendering KaTeX
-content via `{@html "..."}` instead of directly as HTML nodes (which is what
+content via `{@html "..."}` instead of plain HTML nodes (which is what
 rehype-katex does), preventing curly-brace content from getting treated as
 Svelte template expressions.
 

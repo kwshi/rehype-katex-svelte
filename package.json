@@ -1,7 +1,7 @@
 {
   "name": "rehype-katex-svelte",
   "version": "1.0.0",
-  "description": "Like rehype-katex, but Svelte-friendly",
+  "description": "rehype plugin to transform .math-inline, .math-display with KaTeX to Svelte markup",
   "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -13,13 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/kwshi/rehype-katex-svelte.git"
   },
-  "keywords": [
-    "rehype",
-    "katex",
-    "svelte",
-    "mdsvex",
-    "svx"
-  ],
+  "keywords": ["rehype", "katex", "svelte", "mdsvex", "svx"],
   "author": "Kye Shi",
   "license": "MIT",
   "bugs": {

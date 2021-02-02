@@ -8,7 +8,6 @@ import type { KatexOptions } from "katex";
 
 export = (options: KatexOptions = {}) => (tree: Node) => {
   for (const node of selectAll(".math-inline,.math-display", tree)) {
-    console.log(node);
     const displayMode = (<string[] | undefined>(
       node.properties?.className
     ))?.includes("math-display");

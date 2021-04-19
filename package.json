@@ -1,9 +1,9 @@
 {
   "name": "rehype-katex-svelte",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "rehype plugin to transform .math-inline, .math-display with KaTeX to Svelte markup",
   "main": "dist/index.js",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prepare": "tsc",
     "pretest": "tsc",

@@ -13,7 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/kwshi/rehype-katex-svelte.git"
   },
-  "keywords": ["rehype", "katex", "svelte", "mdsvex", "svx"],
+  "keywords": [
+    "rehype",
+    "katex",
+    "svelte",
+    "mdsvex",
+    "svx"
+  ],
   "author": "Kye Shi",
   "license": "MIT",
   "bugs": {

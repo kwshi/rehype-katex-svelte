@@ -23,13 +23,21 @@ Svelte template expressions.
 
 ## Usage
 
-To use rehype-katex-svelte with mdsvex, import rehype-katex-svelte as you would
-any other rehype plugin, and add it to your mdsvex config:
+To use rehype-katex-svelte with mdsvex, you need to import rehype-katex-svelte **and** [remark-math](https://github.com/remarkjs/remark-math) and add both to mdsvex's config:
+
+> **Note:** mdsvex uses an old remark version so you need remark-math@3.0.0
+> ```bash
+> npm install -D remark-math@3.0.0
+> ```
 
 ```js
 import rehypeKatexSvelte from "rehype-katex-svelte";
+import remarkMath from 'remark-math'
 
 mdsvex({
+  remarkPlugins: [
+    remarkMath,
+  ],
   rehypePlugins: [
     rehypeKatexSvelte,
     /* other rehype plugins... */
@@ -56,6 +64,24 @@ mdsvex({
   ],
   /* etc. */
 });
+```
+
+Then you start writing maths in your .svx files
+
+```svelte
+<!-- blog-post.svx -->
+<!-- inline -->
+$f(x) = x^2$
+<!-- block -->
+$$
+f(x) = x^2
+$$
+```
+
+You might also want to add `katex.css` somewhere to style the maths properly
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
 ```
 
 > This plugin is not really _intended_ to be used directly with the rehype API,

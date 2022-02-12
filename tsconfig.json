@@ -2,11 +2,12 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es2017", "dom"],
-    "module": "commonjs",
+    "module": "esnext",
     "strict": true,
     "outDir": "dist",
-    "esModuleInterop": true,
-    "declaration": true
+    "declaration": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src"]
+  "include": ["src/**/*", "test/**/*"]
 }

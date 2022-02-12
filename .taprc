@@ -1,0 +1,5 @@
+# vi: ft=yaml
+node-arg:
+  - '--experimental-specifier-resolution=node'
+  - '--loader=ts-node/esm'
+test-ignore: '^dist/'

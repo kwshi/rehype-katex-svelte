@@ -1,5 +1,4 @@
 import * as Tape from "tape-modern";
-import * as Katex from "katex";
 
 import * as Unified from "unified";
 
@@ -7,7 +6,7 @@ import * as Unified from "unified";
 import rehypeParse from "rehype-parse";
 import rehypeStringify from "rehype-stringify";
 
-import rehypeKatexSvelte from "../src/index";
+import rehypeKatexSvelte from "../";
 
 Tape.test("macros work", (t) => {
   t.ok(

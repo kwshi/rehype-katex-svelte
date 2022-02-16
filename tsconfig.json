@@ -5,6 +5,7 @@
     "module": "esnext",
     "strict": true,
     "outDir": "dist",
+    "rootDir": "src",
     "declaration": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true

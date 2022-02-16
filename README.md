@@ -116,4 +116,4 @@ don't be a jerk.
 
 ## License
 
-MIT @ [Kye Shi](https://github.com/kwshi)
+GPLv3 @ [Kye Shi](https://github.com/kwshi)

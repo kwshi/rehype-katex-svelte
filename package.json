@@ -1,12 +1,12 @@
 {
   "name": "rehype-katex-svelte",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "rehype plugin to transform .math-inline, .math-display with KaTeX to Svelte markup",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "prepare": "tsc",
+    "prepack": "tsc",
     "pretest": "tsc",
     "test": "tap"
   },
@@ -14,7 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/kwshi/rehype-katex-svelte.git"
   },
-  "keywords": ["rehype", "katex", "svelte", "mdsvex", "svx"],
+  "keywords": [
+    "rehype",
+    "katex",
+    "svelte",
+    "mdsvex",
+    "svx"
+  ],
   "author": "Kye Shi",
   "license": "MIT",
   "bugs": {
@@ -23,23 +29,24 @@
   "homepage": "https://github.com/kwshi/rehype-katex-svelte#readme",
   "dependencies": {
     "hast-util-from-string": "^2.0.0",
-    "hast-util-select": "^5.0.1",
+    "hast-util-select": "^5.0.5",
     "hast-util-to-string": "^2.0.0",
-    "katex": "^0.15.2"
+    "katex": "^0.16.7"
   },
   "devDependencies": {
     "@types/hast": "^2.3.4",
     "@types/katex": "^0.11.1",
-    "@types/tape": "^4.13.2",
+    "@types/node": "^20.1.0",
+    "@types/tape": "^4.13.4",
     "@types/unist": "^2.0.6",
-    "esbuild": "^0.14.21",
-    "esbuild-register": "^3.3.2",
+    "esbuild": "^0.14.54",
+    "esbuild-register": "^3.4.2",
     "rehype-parse": "^8.0.4",
     "rehype-stringify": "^9.0.3",
-    "tap": "^15.1.6",
+    "tap": "^15.2.3",
     "tape-modern": "^1.1.2",
-    "ts-node": "^10.5.0",
-    "typescript": "^4.5.5",
-    "unified": "^10.1.1"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "unified": "^10.1.2"
   }
 }
